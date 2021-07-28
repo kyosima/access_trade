@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                       Column(
                         children: [
                           ...List.generate(
-                            5,
+                            6,
                             (index) => Padding(
                               padding:
                                   const EdgeInsets.only(top: 8.0, bottom: 8),
