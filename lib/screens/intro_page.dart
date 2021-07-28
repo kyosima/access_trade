@@ -12,7 +12,7 @@ class _OnBoardingPageState extends State<IntroPage> {
   final introKey = GlobalKey<IntroductionScreenState>();
 
   void _onIntroEnd(context) {
-    Get.offAllNamed("/home", arguments: "Love");
+    Get.offAllNamed("/dashboard", arguments: "Love");
   }
 
   Widget _buildImage(String assetName, [double width = 250]) {

@@ -36,7 +36,10 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Obx(() {
-        if (couponsController.couponsLoading.value) {
+        if (couponsController.couponsLoading.value ||
+            couponsLazadaController.couponsLazadaLoading.value ||
+            couponsTikiController.couponsTikiLoading.value ||
+            couponsShopeeController.couponsShopeeLoading.value) {
           return Center(
             child: CircularProgressIndicator(),
           );
