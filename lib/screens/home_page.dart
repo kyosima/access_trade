@@ -101,7 +101,6 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 19, fontWeight: FontWeight.w600),
                           ),
-                          TextButton(onPressed: () {}, child: Text('Xem thêm'))
                         ],
                       ),
                       SizedBox(
@@ -111,7 +110,7 @@ class HomePage extends StatelessWidget {
                       Column(
                         children: [
                           ...List.generate(
-                            6,
+                            couponsController.getCoupons.value!.length,
                             (index) => Padding(
                               padding:
                                   const EdgeInsets.only(top: 8.0, bottom: 8),
@@ -411,10 +410,6 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text('Xem thêm'),
-                          )
                         ],
                       ),
                       SizedBox(
@@ -697,10 +692,6 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text('Xem thêm'),
-                          )
                         ],
                       ),
                       SizedBox(
@@ -968,10 +959,6 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text('Xem thêm'),
-                          )
                         ],
                       ),
                       SizedBox(

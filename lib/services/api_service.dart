@@ -4,7 +4,8 @@ import 'package:http/http.dart' as http;
 class ApiService {
   Future<CouponsModel> fetchCoupon() async {
     final response = await http.get(
-        Uri.parse('https://api.accesstrade.vn/v1/offers_informations'),
+        Uri.parse(
+            'https://api.accesstrade.vn/v1/offers_informations?domain=yes24.vn'),
         headers: {"Authorization": "Token 2hH37s83-wHsH-QaMR5a5pu_IPa7Jk2z"});
     if (response.statusCode == 200) {
       return couponsFromJson(response.body);
